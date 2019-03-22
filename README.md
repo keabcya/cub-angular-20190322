@@ -33,3 +33,7 @@
 
 - 自動排版
     - alt + shift + f (記得設定 prettier.singleQuote)
+
+## Emmet
+
+https://docs.emmet.io/abbreviations/syntax/
