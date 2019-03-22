@@ -29,8 +29,7 @@
     - [Mac] cmd + shift + f
 
 - 開啟/關閉原始檔控制(git)
-    - [Win] ctrl + shift + g
-    - [Mac] cmd + shift + g
+    - [Win/Mac] ctrl + shift + g
 
 - 自動排版
     - alt + shift + f (記得設定 prettier.singleQuote)
