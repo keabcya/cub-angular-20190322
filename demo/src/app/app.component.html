@@ -1,4 +1,5 @@
 <app-header></app-header>
+<h3 class="highlight">test</h3>
 
 <!-- CONTAINER START-->
 <section class="container">
@@ -6,6 +7,27 @@
     <section class="col-md-8 content-wrapper">
       <div id="ctl00_cphBody_divError"></div>
       <div id="ctl00_cphBody_PostList1_posts" class="posts">
+
+          <article class="post" *ngFor="let item of articles">
+              <header class="post-header">
+                <h2 class="post-title">
+                  <a href="http://blog.miniasp.com/post/2016/04/30/Visual-Studio-Code-from-Command-Prompt-notes.aspx">
+                    {{ item.title }}
+                  </a>
+                </h2>
+                <div class="post-info clearfix">
+                  <span class="post-date"><i class="glyphicon glyphicon-calendar"></i>2016/04/30 18:05</span>
+                  <span class="post-author"><i class="glyphicon glyphicon-user"></i><a href="http://blog.miniasp.com/author/will.aspx">Will
+                      保哥</a></span>
+                  <span class="post-category"><i class="glyphicon glyphicon-folder-close"></i><a href="http://blog.miniasp.com/category/Visual-Studio.aspx">Visual
+                      Studio</a></span>
+                </div>
+              </header>
+              <section class="post-body text">
+                {{ item.content }}
+              </section>
+            </article>
+
 
         <!-- Article START-->
         <article class="post" id="post0">

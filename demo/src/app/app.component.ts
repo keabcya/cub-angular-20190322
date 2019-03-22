@@ -14,6 +14,17 @@ export class AppComponent {
   defaultKeyword = 'angular';
   keyword = '';
 
+  articles = [
+    {
+      title: 'test1',
+      content: 'hello'
+    },
+    {
+      title: 'test2',
+      content: 'hello world'
+    }
+  ];
+
   search(e: MouseEvent) {
     if (e.altKey) {
       this.title = this.title + '!';
@@ -23,7 +34,6 @@ export class AppComponent {
 
   keywordInput(e: KeyboardEvent) {
     this.keyword = (e.target as HTMLInputElement).value;
-
   }
 
   searchKeyword() {
