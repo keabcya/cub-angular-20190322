@@ -26,6 +26,6 @@ export class AppComponent {
   }
 
   searchKeyword() {
-    // console.log(this.keyword);
+    console.log(this.keyword);
   }
 }
