@@ -6,9 +6,11 @@
 - [實作課程起始專案](https://stackblitz.com/edit/cub-angular-20190323)
 
 ## 熱鍵表
-- [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
-- [Mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
-- [Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
+
+- 下載 PDF 檔
+    - [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+    - [Mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+    - [Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
 
 - 全部儲存：
     - [Win] ctrl + k, s
