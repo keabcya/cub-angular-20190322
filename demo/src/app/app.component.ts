@@ -21,7 +21,8 @@ export class AppComponent {
     },
     {
       title: 'test2',
-      content: 'hello world'
+      content: 'hello world',
+      age: 9
     }
   ];
 
@@ -43,8 +44,32 @@ export class AppComponent {
   }
 
   searchArticle(keyword) {
+    this.title = this.title + '!';
     // console.log(keyword);
     this.articles = this.originalArticles
       .filter(article => article.title.indexOf(keyword) !== -1);
   }
 }
+
+
+// ---- 模擬的 Angular 行為 ----
+
+// const component = new HeaderComponent();
+
+// // 檢查是否需要 service
+// if(hasService) {
+//   // const service = new DataService();
+//   const service = new FakeService();
+//   component.dataService = service;
+// }
+// component.ngOnInit();
+
+// while(true) {
+//   // 變更偵測
+//   const newHeaderTitle = 'test2';
+//   const chnage = true;
+//   if(change) {
+//     component.headerTitle = newHeaderTitle;
+//     component.ngOnChanges({...});
+//   }
+// }

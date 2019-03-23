@@ -1,5 +1,5 @@
-<app-header></app-header>
-<h3 class="highlight">test</h3>
+<app-header [headerTitle]="title"></app-header>
+<h3 class="highlight" title="xxxx">test</h3>
 
 <!-- CONTAINER START-->
 <section class="container">
@@ -10,7 +10,7 @@
 
         <app-article [article]="item" *ngFor="let item of articles"></app-article>
 
-        <!-- <article class="post" *ngFor="let item of articles">
+        <article class="post" *ngFor="let item of articles">
           <header class="post-header">
             <h2 class="post-title">
               <a href="http://blog.miniasp.com/post/2016/04/30/Visual-Studio-Code-from-Command-Prompt-notes.aspx">
@@ -30,7 +30,7 @@
           <section class="post-body text">
             {{ item.content }}
           </section>
-        </article> -->
+        </article>
 
 
         <!-- Article START-->
