@@ -13,7 +13,6 @@
           Studio</a></span>
     </div>
   </header>
-  <section class="post-body text">
-    {{ article.summary }}
+  <section class="post-body text" [innerHTML]="article.summary">
   </section>
 </article>
