@@ -32,7 +32,19 @@
     - [Win/Mac] ctrl + shift + g
 
 - 自動排版
-    - alt + shift + f (記得設定 prettier.singleQuote)
+    - [Win/Mac] alt + shift + f (記得設定 prettier.singleQuote)
+
+- 註解
+    - [Win] ctrl + k + c
+    - [Mac] cmd + k + c
+
+- 取消註解
+    - [Win] ctrl + k + u
+    - [Mac] cmd + k + u
+
+- 單行註解
+    - [Win] ctrl + /
+    - [Mac] cmd + /
 
 ## Emmet
 
