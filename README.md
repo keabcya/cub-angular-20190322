@@ -98,6 +98,14 @@ https://docs.emmet.io/abbreviations/syntax/
 
 2. 使用 `F5` 開始偵錯
 
+## 相依注入
+
+- [Dependenct Injection](https://angular.tw/guide/dependency-injection)
+- [在 @NgModule 的 providers: [] 自由更換注入內容 (1)](https://wellwind.idv.tw/blog/2018/11/04/mastering-angular-20-ngmodule-providers/)
+- [在 @NgModule 的 providers: [] 自由更換注入內容 (2)](https://wellwind.idv.tw/blog/2018/11/05/mastering-angular-21-ngmodule-providers-2/)
+- [各種在程式中取的注入 token 實體的方法](https://wellwind.idv.tw/blog/2018/11/06/mastering-angular-22-get-injection-tokens/)
+- [認識 InjectionToken](https://wellwind.idv.tw/blog/2018/11/07/mastering-angular-23-injection-tokens/)
+
 ## SEO
 
 - [Angular Universal 伺服器渲染](https://angular.tw/guide/universal)
