@@ -37,3 +37,7 @@
 ## Emmet
 
 https://docs.emmet.io/abbreviations/syntax/
+
+## Input 資料流
+
+![Input 資料流](images/input-flow.jpg)
