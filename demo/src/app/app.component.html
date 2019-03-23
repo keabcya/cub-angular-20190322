@@ -7,8 +7,7 @@
     <section class="col-md-8 content-wrapper">
       <div id="ctl00_cphBody_divError"></div>
       <div id="ctl00_cphBody_PostList1_posts" class="posts">
-
-        <app-article [article]="item" *ngFor="let item of articles | articleFilter:keyword"></app-article>
+        <app-article [article]="item" *ngFor="let item of (articles | articleFilter:keyword)"></app-article>
 
         <!-- <article class="post" *ngFor="let item of articles">
           <header class="post-header">

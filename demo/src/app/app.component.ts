@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from './data.service';
 
 @Component({
   selector: 'app-root',
@@ -14,19 +15,23 @@ export class AppComponent {
   defaultKeyword = 'angular';
   keyword = '';
 
-  articles = [
-    {
-      title: 'test1',
-      content: 'hello'
-    },
-    {
-      title: 'test2',
-      content: 'hello world',
-      age: 9
-    }
-  ];
+  // articles = [
+  //   {
+  //     title: 'test1',
+  //     content: 'hello'
+  //   },
+  //   {
+  //     title: 'test2',
+  //     content: 'hello world',
+  //     age: 9
+  //   }
+  // ];
 
-  originalArticles = this.articles;
+  articles = this.dataService.articles;
+  originalArticles = this.dataService.articles;
+
+  constructor(private dataService: DataService) {
+  }
 
   search(e: MouseEvent) {
     if (e.altKey) {
@@ -47,8 +52,8 @@ export class AppComponent {
     this.keyword = keyword;
     this.title = this.title + '!';
     // console.log(keyword);
-    this.articles = this.originalArticles
-      .filter(article => article.title.indexOf(keyword) !== -1);
+    // this.articles = this.originalArticles
+    //   .filter(article => article.title.indexOf(keyword) !== -1);
   }
 }
 
