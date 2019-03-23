@@ -97,3 +97,13 @@ https://docs.emmet.io/abbreviations/syntax/
 ```
 
 2. 使用 `F5` 開始偵錯
+
+## SEO
+
+- [Angular Universal 伺服器渲染](https://angular.tw/guide/universal)
+- [Meta service](https://angular.tw/api/platform-browser/Meta)
+- [Title service](https://angular.tw/api/platform-browser/Title)
+
+## 路由
+
+- https://angular.tw/guide/router
