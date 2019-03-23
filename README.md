@@ -45,3 +45,35 @@ https://docs.emmet.io/abbreviations/syntax/
 ## Output 資料流
 
 ![Output 資料流](images/output-flow.jpg)
+
+## 使用 Chrome 偵錯
+
+1. 打開 `F12`
+2. `Source` 頁籤
+3. `ctrl + p` 搜尋 ts 檔
+4. 加入中斷點
+
+## 使用 VSCode 偵錯
+
+1. 建立 `.vscode/launch.json`
+
+```json
+{
+  // 使用 IntelliSense 以得知可用的屬性。
+  // 暫留以檢視現有屬性的描述。
+  // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [{
+    "type": "chrome",
+    "request": "launch",
+    "name": "Angular Debug",
+    "url": "http://localhost:4200",
+    "webRoot": "${workspaceRoot}/src",
+    "sourceMapPathOverrides": {
+      "webpack:///./src/*": "${webRoot}/*"
+    }
+  }]
+}
+```
+
+2. 使用 `F5` 開始偵錯
