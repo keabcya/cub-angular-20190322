@@ -128,9 +128,9 @@
     <!-- Aside START -->
     <aside class="col-md-4 sidebar-wrapper">
       <div id="widgetzone_be_WIDGET_ZONE" class="widgetzone">
-
+        <app-search-box (keywordSearch)="searchArticle($event)"></app-search-box>
         <!-- Search START-->
-        <div class="widget search">
+        <!-- <div class="widget search">
           <div class="widget-content">
             <div id="searchbox">
               <input type="text" placeholder="請輸入搜尋關鍵字" accesskey="s" (keyword.enter)="searchKeyword()"
@@ -139,7 +139,7 @@
               {{ keyword }}
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- Search END -->
 
         <!-- Calendar START -->

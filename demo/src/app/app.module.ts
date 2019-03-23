@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ArticleComponent } from './article/article.component';
+import { SearchBoxComponent } from './search-box/search-box.component';
 
 
 
@@ -14,7 +15,8 @@ import { ArticleComponent } from './article/article.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ArticleComponent
+    ArticleComponent,
+    SearchBoxComponent
   ],
   imports: [
     BrowserModule,

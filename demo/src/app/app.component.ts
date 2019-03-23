@@ -25,6 +25,8 @@ export class AppComponent {
     }
   ];
 
+  originalArticles = this.articles;
+
   search(e: MouseEvent) {
     if (e.altKey) {
       this.title = this.title + '!';
@@ -38,5 +40,11 @@ export class AppComponent {
 
   searchKeyword() {
     console.log(this.keyword);
+  }
+
+  searchArticle(keyword) {
+    // console.log(keyword);
+    this.articles = this.originalArticles
+      .filter(article => article.title.indexOf(keyword) !== -1);
   }
 }
