@@ -1,8 +1,14 @@
 # cub-angular-20190322
 
+## 線上起始專案
+
+- [入門課程起始專案](https://stackblitz.com/edit/cub-angular-20190322)
+- [實作課程起始專案](https://stackblitz.com/edit/cub-angular-20190323)
+
 ## 熱鍵表
-- Windows => https://code.visualstudio.com/…/keyboard-shortcuts-windows.…
-- Mac => https://code.visualstudio.com/…/keyboard-shortcuts-macos.pdf
+- [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+- [Mac](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+- [Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
 
 - 全部儲存：
     - [Win] ctrl + k, s
