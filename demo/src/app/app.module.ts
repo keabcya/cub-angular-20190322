@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ArticleComponent } from './article/article.component';
 
 
 
@@ -12,7 +13,8 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
