@@ -41,3 +41,7 @@ https://docs.emmet.io/abbreviations/syntax/
 ## Input 資料流
 
 ![Input 資料流](images/input-flow.jpg)
+
+## Output 資料流
+
+![Output 資料流](images/output-flow.jpg)
