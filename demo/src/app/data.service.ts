@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
+import { Article } from './article';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-
   articles = [
     {
       title: 'test1',
@@ -17,5 +17,13 @@ export class DataService {
     }
   ];
 
-  constructor() { }
+  constructor() {}
+
+  search(articles: Article[], keyword: string): any {
+    if (articles) {
+      return articles.filter(article => article.title.indexOf(keyword) !== -1);
+    }
+
+    return [];
+  }
 }

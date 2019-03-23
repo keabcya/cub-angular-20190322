@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
+import { Article } from './article';
 import { DataService } from './data.service';
 
 @Component({
@@ -6,7 +8,7 @@ import { DataService } from './data.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'hello world';
   subtitle = '記載著 Will 在網路世界的學習心得與<u>技術分享</u>';
   url = 'https://blog.miniasp.com/';
@@ -27,10 +29,19 @@ export class AppComponent {
   //   }
   // ];
 
-  articles = this.dataService.articles;
+  // articles = this.dataService.articles;
+  articles: Article[];
   originalArticles = this.dataService.articles;
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService, private http: HttpClient) {
+
+  }
+
+  ngOnInit() {
+    this.http.get('http://localhost:4200/assets/api.json').subscribe((data: Article[]) => {
+      // console.log(data);
+      this.articles = data;
+    });
   }
 
   search(e: MouseEvent) {

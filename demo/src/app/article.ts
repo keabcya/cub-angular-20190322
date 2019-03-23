@@ -1,6 +1,7 @@
 export interface Article {
   title: string;
   content: string;
+  summary: string;
   age?: number;
 }
 

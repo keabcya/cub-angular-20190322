@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-search-box',
@@ -11,12 +12,15 @@ export class SearchBoxComponent implements OnInit {
 
   @Output() keywordSearch = new EventEmitter();
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
   }
 
   search(e: MouseEvent) {
+
+    // this.articles = this.originalArticles
+    //   .filter(article => article.title.indexOf(keyword) !== -1);
     this.keywordSearch.emit(this.keyword);
   }
 }
