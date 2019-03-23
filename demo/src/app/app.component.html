@@ -8,9 +8,9 @@
       <div id="ctl00_cphBody_divError"></div>
       <div id="ctl00_cphBody_PostList1_posts" class="posts">
 
-        <app-article [article]="item" *ngFor="let item of articles"></app-article>
+        <app-article [article]="item" *ngFor="let item of articles | articleFilter:keyword"></app-article>
 
-        <article class="post" *ngFor="let item of articles">
+        <!-- <article class="post" *ngFor="let item of articles">
           <header class="post-header">
             <h2 class="post-title">
               <a href="http://blog.miniasp.com/post/2016/04/30/Visual-Studio-Code-from-Command-Prompt-notes.aspx">
@@ -32,8 +32,9 @@
           </section>
         </article>
 
-
+        -->
         <!-- Article START-->
+        <!--
         <article class="post" id="post0">
           <header class="post-header">
             <h2 class="post-title">
@@ -118,7 +119,7 @@
                 href="http://blog.miniasp.com/post/2016/03/14/ASPNET-MVC-Developer-Note-Part-28-Understanding-ModelState.aspx#continue">繼續閱讀</a>
               ...</p>
           </section>
-        </article>
+        </article> -->
         <!-- Article END-->
 
       </div>

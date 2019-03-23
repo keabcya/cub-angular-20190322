@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'test';
+  title = 'hello world';
   subtitle = '記載著 Will 在網路世界的學習心得與<u>技術分享</u>';
   url = 'https://blog.miniasp.com/';
   titleLeft = true;
@@ -44,6 +44,7 @@ export class AppComponent {
   }
 
   searchArticle(keyword) {
+    this.keyword = keyword;
     this.title = this.title + '!';
     // console.log(keyword);
     this.articles = this.originalArticles

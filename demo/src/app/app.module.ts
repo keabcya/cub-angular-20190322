@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ArticleComponent } from './article/article.component';
 import { SearchBoxComponent } from './search-box/search-box.component';
+import { ArticleFilterPipe } from './article-filter.pipe';
 
 
 
@@ -16,7 +17,8 @@ import { SearchBoxComponent } from './search-box/search-box.component';
     HeaderComponent,
     FooterComponent,
     ArticleComponent,
-    SearchBoxComponent
+    SearchBoxComponent,
+    ArticleFilterPipe
   ],
   imports: [
     BrowserModule,

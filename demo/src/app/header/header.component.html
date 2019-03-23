@@ -29,7 +29,7 @@
       <img src="/assets/images/logo.png" class="pull-left logo" alt="The Will Will Web" (click)="toggleHighlight()">
 
       <div [class.pull-left]="titleLeft">
-        <h1><a href="http://blog.miniasp.com/">{{ headerTitle }}</a></h1>
+        <h1><a href="http://blog.miniasp.com/">{{ headerTitle | titlecase }}</a></h1>
         <h3 class="highlight" [innerHTML]="subtitle"></h3>
         <h3 [ngClass]="{highlight: isHighlight}" [innerHTML]="subtitle"
           [ngStyle]="{'font-size.px': fontSzie}"
